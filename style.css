@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #f0f4f5;
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #f0f4f5;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 15px 15px;
+  background-color: #0b2239;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar .menu {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navbar .menu.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu li {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar .menu li:hover {
+  background-color: #d32f2f;
+  border-radius: 50px;
+}
+
+.navbar .btn {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .btn .logInBtn,
+.navbar .btn .signUpBtn {
+  display: none;
+}
+
+.navbar .btn .toggleBtn {
+  width: 10px; /* 'X' 로 바뀔 때 크기가 변경되는 것을 예방 */
+  margin-left: 20px;
+}
+
+.navbar .btn .toggleBtn i {
+  color: #f0f4f5;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  /* 이 부분 수정 필요 */
+  .navbar .btn {
+    top: 20px;
+  }
+
+  .navbar .btn .connectBtn {
+    display: flex;
+  }
+
+  .navbar .btn .logInBtn,
+  .navbar .btn .signUpBtn {
+    display: block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .navbar .btn .logInBtn {
+    background-color: #d32f2f;
+  }
+
+  .navbar .btn .signUpBtn {
+    border: solid #d32f2f;
+  }
+}
