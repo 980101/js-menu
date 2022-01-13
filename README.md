@@ -1,5 +1,5 @@
 # Simple Dropdown Menu
-Make menu with vanilla JS
+vanilla JS를 사용하여 드롭다운이 가능한 헤더 메뉴를 생성한다.
 
 ## Screen Shots 📷
 ◻ 기본 화면
